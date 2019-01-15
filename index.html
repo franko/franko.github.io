@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>When Maths are interesting</title>
+        <link rel="stylesheet" href="http://franko.github.io/theme/css/main.css" />
+        <link href="http://franko.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="When Maths are interesting Atom Feed" />
+    <link rel="stylesheet" href="http://franko.github.io/theme/css/katex.min.css">
+    <script src="http://franko.github.io/theme/js/katex.min.js"></script>
+    <script src="http://franko.github.io/theme/js/auto-render.min.js"></script>
+    <link rel="preload" href="http://franko.github.io/theme/fonts" as="font" type="font/woff2">
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://franko.github.io/">When Maths are interesting </a></h1>
+                <nav><ul>
+                    <li><a href="http://franko.github.io/category/articles.html">articles</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="http://franko.github.io/geometric-algebra-the-wonderful-revelation.html">Geometric Algebra, the wonderful revelation</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2019-01-13T15:56:00+01:00">
+                Published: dim. 13 janvier 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://franko.github.io/author/francesco-abbate.html">Francesco Abbate</a>
+        </address>
+<p>In <a href="http://franko.github.io/category/articles.html">articles</a>.</p>
+
+</footer><!-- /.post-info --><p>Some time ago I discovered on Hacker News the Oersted Medal lecture of David Hestenes, <a href="http://geocalc.clas.asu.edu/html/Overview.html">Reforming the mathematical language of physics</a> . The text describe among other things the field of geometric algebra with a very didactic and easy to read style.</p>
+<p>For me it was a revelation, I was fascinated by elegance of this theory and how naturally it did explain a lot of things that were otherwise unconnected.</p>
+<p>Hestenes does explain that you can sum scalar and vectors and it make sense and you can multiply vectors in a natural and meaningful way. The Algebra that you obtain, the Geometric Algebra, is incredibly rich and suggests a lot of ideas that could have been otherwise unseen.</p>
+<p>The central idea of the geometric algebra is the product of two vectors written as <span class="math">\(\mathbf{a} \mathbf{b}\)</span>. It is not commutative and it does embody the concepts of both scalar and extern product.</p>
+<p>One of the most fascinating things to me was the fact that each space of dimension <span class="math">\(n\)</span> is associated to a multi-vector space of dimension of <span class="math">\(2^n\)</span>. In turn the multi-vector space is composed of n + 1 subspaces each of dimension</p>
+<div class="math">$$\binom{n}{k} \qquad \textrm{for} \, \, k = 0, \ldots, n $$</div>
+<p>For example the space has dimension 3 so it is broken down to 4 subspaces of dimensions 1, 3, 3, 1. The first one is the space of scalars which are just real numbers. Then we have the familiar vector space of dimension 3. What is interesting is the other two subspaces of dimensions 3 and 1. They are the bivectors and the pseudo-scalars proportional to the imaginary unit <span class="math">\(i\)</span>.</p>
+<p>Actually one of the first things you discover when you learn geometric algebra is that the imaginary unit is naturally introduced by geometric algebra for each space of dimensions greater then one. It is quite fascinating to me to discover that a purely geometric theory naturally requires the imaginary unit whereas in ordinary geometry it is an extraneous concept.</p>
+<p>The imaginary unit is actually related to the vectors by the relation</p>
+<div class="math">$$\mathbf{e}_1 \mathbf{e}_2 \mathbf{e}_3 = \mathbf{i}$$</div>
+<p>Now you can wonder what bivectors are and what is their meaning. Probably their properties are better described by the geometric algebra itself but you can get an idea of what they are quite easily. You can think to them as product of two orthogonal vectors or equivalently as purely imaginary vector.</p>
+<p>Actually the following equality holds for the tridimensional space </p>
+<div class="math">$$\mathbf{e}_1 \mathbf{e}_2 = \mathbf{i} \, \mathbf{e}_3$$</div>
+<p>where the vectors <span class="math">\(\mathbf{e}_i\)</span> are the base vectors. The expression above is actually true for any pair permutation of the three indexes.</p>
+<div style="text-align:center"><img src ="http://franko.github.io/images/basis_of_3d_multivector.png" />
+</div>
+
+<!-- ![Alt Text]({static}/images/basis_of_3d_multivector.png)
+ -->
+
+<p>The image above, taken from Wikipedia, illustrates the basis vectors and their product, including the pseudo-scalar depicted as a volume.</p>
+<p>From the relation above it is quite clear that there is a one-to-one relation between vectors and bivectors. The transformation is done simply by multiplying the vector by the imaginary unit like in the right hand side of the equation above.</p>
+<p>The bivectors explain the mysterious axial vectors that you probably already know. Actually axial vector are nothing else that bivectors that you represent by an ordinary vector using the biunivocal relation between them.</p>
+<p>One of the most wonderful simplification stemming from GA is that the electromagnetic field can be thought as composed of a vector and a bivector part as described by the relation</p>
+<div class="math">$$F=\mathbf{E}+\mathbf{i}\mathbf{B}$$</div>
+<p>so that all the Maxwell equations are expressed by a single equation:</p>
+<div class="math">$$\left(\frac{1}{c}\partial_t + \nabla \right) F = \rho - \frac{1}{c} \mathbf{J}$$</div>
+<p>For example the equation above, in the electrostatic case, becomes:</p>
+<div class="math">$$\nabla F = \rho $$</div>
+<p> that correspond to the two equations </p>
+<div class="math">$$\nabla \cdot \mathbf{E} = \rho \qquad \nabla \wedge B = 0$$</div>
+<p>Another fascinating thing about Geometric Algebra is that the non-commuting rules of basis vectors in tridimensional space is the same of relations of the Pauli matrices. The difference is that, in geometric algebra the relations are a simple properties of the geometry and does not need to be introduced ad hoc like it happens in quantum mechanics.</p>
+<p>Last but not least one of the most clear advantage of GA is to describe spatial rotations directly in term of vectors. For example is <span class="math">\(\hat{\mathbf{u}}\)</span> is an unitary vector a rotation of a vector <span class="math">\(\mathbf{v}\)</span> of <span class="math">\(\theta\)</span> degrees around <span class="math">\(\hat{\mathbf{u}}\)</span> is described by </p>
+<div class="math">$$e^{\mathbf{i} \, \hat{\mathbf{u}} \, \theta / 2} \, \mathbf{v} \, e^{-\mathbf{i} \, \hat{\mathbf{u}} \, \theta / 2}$$</div>
+<p>For the interested people I strongly recommend to read the lecture of Hestenes for an excellent, complete introduction to this fascinating subject. </p>                </article>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://en.wikipedia.org/wiki/Geometric_algebra">Geometric Algebra on Wikipedia</a></li>
+                            <li><a href="https://katex.org/">Katex math typesetting</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://franko.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+<script>renderMathInElement(document.body);</script>
+</body>
+</html>

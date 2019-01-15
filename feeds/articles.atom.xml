@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>When Maths are interesting - articles</title><link href="http://franko.github.io/" rel="alternate"></link><link href="http://franko.github.io/feeds/articles.atom.xml" rel="self"></link><id>http://franko.github.io/</id><updated>2019-01-13T15:56:00+01:00</updated><entry><title>Geometric Algebra, the wonderful revelation</title><link href="http://franko.github.io/geometric-algebra-the-wonderful-revelation.html" rel="alternate"></link><published>2019-01-13T15:56:00+01:00</published><updated>2019-01-13T15:56:00+01:00</updated><author><name>Francesco Abbate</name></author><id>tag:franko.github.io,2019-01-13:/geometric-algebra-the-wonderful-revelation.html</id><summary type="html">&lt;p&gt;Some time ago I discovered on Hacker News the Oersted Medal lecture of David Hestenes, &lt;a href="http://geocalc.clas.asu.edu/html/Overview.html"&gt;Reforming the mathematical language of physics&lt;/a&gt; . The text describe among other things the field of geometric algebra with a very didactic and easy to read style.&lt;/p&gt;
+&lt;p&gt;For me it was a revelation, I was fascinated …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Some time ago I discovered on Hacker News the Oersted Medal lecture of David Hestenes, &lt;a href="http://geocalc.clas.asu.edu/html/Overview.html"&gt;Reforming the mathematical language of physics&lt;/a&gt; . The text describe among other things the field of geometric algebra with a very didactic and easy to read style.&lt;/p&gt;
+&lt;p&gt;For me it was a revelation, I was fascinated by elegance of this theory and how naturally it did explain a lot of things that were otherwise unconnected.&lt;/p&gt;
+&lt;p&gt;Hestenes does explain that you can sum scalar and vectors and it make sense and you can multiply vectors in a natural and meaningful way. The Algebra that you obtain, the Geometric Algebra, is incredibly rich and suggests a lot of ideas that could have been otherwise unseen.&lt;/p&gt;
+&lt;p&gt;The central idea of the geometric algebra is the product of two vectors written as &lt;span class="math"&gt;\(\mathbf{a} \mathbf{b}\)&lt;/span&gt;. It is not commutative and it does embody the concepts of both scalar and extern product.&lt;/p&gt;
+&lt;p&gt;One of the most fascinating things to me was the fact that each space of dimension &lt;span class="math"&gt;\(n\)&lt;/span&gt; is associated to a multi-vector space of dimension of &lt;span class="math"&gt;\(2^n\)&lt;/span&gt;. In turn the multi-vector space is composed of n + 1 subspaces each of dimension&lt;/p&gt;
+&lt;div class="math"&gt;$$\binom{n}{k} \qquad \textrm{for} \, \, k = 0, \ldots, n $$&lt;/div&gt;
+&lt;p&gt;For example the space has dimension 3 so it is broken down to 4 subspaces of dimensions 1, 3, 3, 1. The first one is the space of scalars which are just real numbers. Then we have the familiar vector space of dimension 3. What is interesting is the other two subspaces of dimensions 3 and 1. They are the bivectors and the pseudo-scalars proportional to the imaginary unit &lt;span class="math"&gt;\(i\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Actually one of the first things you discover when you learn geometric algebra is that the imaginary unit is naturally introduced by geometric algebra for each space of dimensions greater then one. It is quite fascinating to me to discover that a purely geometric theory naturally requires the imaginary unit whereas in ordinary geometry it is an extraneous concept.&lt;/p&gt;
+&lt;p&gt;The imaginary unit is actually related to the vectors by the relation&lt;/p&gt;
+&lt;div class="math"&gt;$$\mathbf{e}_1 \mathbf{e}_2 \mathbf{e}_3 = \mathbf{i}$$&lt;/div&gt;
+&lt;p&gt;Now you can wonder what bivectors are and what is their meaning. Probably their properties are better described by the geometric algebra itself but you can get an idea of what they are quite easily. You can think to them as product of two orthogonal vectors or equivalently as purely imaginary vector.&lt;/p&gt;
+&lt;p&gt;Actually the following equality holds for the tridimensional space &lt;/p&gt;
+&lt;div class="math"&gt;$$\mathbf{e}_1 \mathbf{e}_2 = \mathbf{i} \, \mathbf{e}_3$$&lt;/div&gt;
+&lt;p&gt;where the vectors &lt;span class="math"&gt;\(\mathbf{e}_i\)&lt;/span&gt; are the base vectors. The expression above is actually true for any pair permutation of the three indexes.&lt;/p&gt;
+&lt;div style="text-align:center"&gt;&lt;img src ="http://franko.github.io/images/basis_of_3d_multivector.png" /&gt;
+&lt;/div&gt;
+
+&lt;!-- ![Alt Text]({static}/images/basis_of_3d_multivector.png)
+ --&gt;
+
+&lt;p&gt;The image above, taken from Wikipedia, illustrates the basis vectors and their product, including the pseudo-scalar depicted as a volume.&lt;/p&gt;
+&lt;p&gt;From the relation above it is quite clear that there is a one-to-one relation between vectors and bivectors. The transformation is done simply by multiplying the vector by the imaginary unit like in the right hand side of the equation above.&lt;/p&gt;
+&lt;p&gt;The bivectors explain the mysterious axial vectors that you probably already know. Actually axial vector are nothing else that bivectors that you represent by an ordinary vector using the biunivocal relation between them.&lt;/p&gt;
+&lt;p&gt;One of the most wonderful simplification stemming from GA is that the electromagnetic field can be thought as composed of a vector and a bivector part as described by the relation&lt;/p&gt;
+&lt;div class="math"&gt;$$F=\mathbf{E}+\mathbf{i}\mathbf{B}$$&lt;/div&gt;
+&lt;p&gt;so that all the Maxwell equations are expressed by a single equation:&lt;/p&gt;
+&lt;div class="math"&gt;$$\left(\frac{1}{c}\partial_t + \nabla \right) F = \rho - \frac{1}{c} \mathbf{J}$$&lt;/div&gt;
+&lt;p&gt;For example the equation above, in the electrostatic case, becomes:&lt;/p&gt;
+&lt;div class="math"&gt;$$\nabla F = \rho $$&lt;/div&gt;
+&lt;p&gt; that correspond to the two equations &lt;/p&gt;
+&lt;div class="math"&gt;$$\nabla \cdot \mathbf{E} = \rho \qquad \nabla \wedge B = 0$$&lt;/div&gt;
+&lt;p&gt;Another fascinating thing about Geometric Algebra is that the non-commuting rules of basis vectors in tridimensional space is the same of relations of the Pauli matrices. The difference is that, in geometric algebra the relations are a simple properties of the geometry and does not need to be introduced ad hoc like it happens in quantum mechanics.&lt;/p&gt;
+&lt;p&gt;Last but not least one of the most clear advantage of GA is to describe spatial rotations directly in term of vectors. For example is &lt;span class="math"&gt;\(\hat{\mathbf{u}}\)&lt;/span&gt; is an unitary vector a rotation of a vector &lt;span class="math"&gt;\(\mathbf{v}\)&lt;/span&gt; of &lt;span class="math"&gt;\(\theta\)&lt;/span&gt; degrees around &lt;span class="math"&gt;\(\hat{\mathbf{u}}\)&lt;/span&gt; is described by &lt;/p&gt;
+&lt;div class="math"&gt;$$e^{\mathbf{i} \, \hat{\mathbf{u}} \, \theta / 2} \, \mathbf{v} \, e^{-\mathbf{i} \, \hat{\mathbf{u}} \, \theta / 2}$$&lt;/div&gt;
+&lt;p&gt;For the interested people I strongly recommend to read the lecture of Hestenes for an excellent, complete introduction to this fascinating subject. &lt;/p&gt;</content></entry></feed>
