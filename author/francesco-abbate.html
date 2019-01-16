@@ -3,71 +3,122 @@
 <head>
         <meta charset="utf-8" />
         <title>When Maths are interesting - Francesco Abbate</title>
-        <link rel="stylesheet" href="https://franko.github.io/theme/css/main.css" />
-        <link href="https://franko.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="When Maths are interesting Atom Feed" />
-    <link rel="stylesheet" href="https://franko.github.io/theme/css/katex.min.css">
-    <script src="https://franko.github.io/theme/js/katex.min.js"></script>
-    <script src="https://franko.github.io/theme/js/auto-render.min.js"></script>
-    <link rel="preload" href="https://franko.github.io/theme/fonts" as="font" type="font/woff2">
+        <link rel="stylesheet" href="/theme/css/main.css" />
+    <link rel="stylesheet" href="/theme/css/katex.min.css">
+    <script src="/theme/js/katex.min.js"></script>
+    <script src="/theme/js/auto-render.min.js"></script>
+    <link rel="preload" href="/theme/fonts" as="font" type="font/woff2">
 </head>
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="https://franko.github.io/">When Maths are interesting </a></h1>
+                <h1><a href="/">When Maths are interesting </a></h1>
                 <nav><ul>
-                    <li><a href="https://franko.github.io/category/articles.html">articles</a></li>
+                    <li><a href="/category/maths.html">maths</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="https://franko.github.io/geometric-algebra-the-wonderful-revelation.html">Geometric Algebra, the wonderful revelation</a></h1>
+                    <h1 class="entry-title"><a href="/matrix-representation-for-tridimensional-space-geometric-algebra.html">Matrix representation for tridimensional space geometric algebra</a></h1>
 <footer class="post-info">
-        <abbr class="published" title="2019-01-13T15:56:00+01:00">
-                Published: dim. 13 janvier 2019
+        <abbr class="published" title="2013-05-11T00:00:00+02:00">
+                Published: sam. 11 mai 2013
         </abbr>
 
         <address class="vcard author">
-                By                         <a class="url fn" href="https://franko.github.io/author/francesco-abbate.html">Francesco Abbate</a>
+                By                         <a class="url fn" href="/author/francesco-abbate.html">Francesco Abbate</a>
         </address>
-<p>In <a href="https://franko.github.io/category/articles.html">articles</a>.</p>
+<p>In <a href="/category/maths.html">maths</a>.</p>
 
-</footer><!-- /.post-info --><p>Some time ago I discovered on Hacker News the Oersted Medal lecture of David Hestenes, <a href="http://geocalc.clas.asu.edu/html/Overview.html">Reforming the mathematical language of physics</a> . The text describe among other things the field of geometric algebra with a very didactic and easy to read style.</p>
-<p>For me it was a revelation, I was fascinated by elegance of this theory and how naturally it did explain a lot of things that were otherwise unconnected.</p>
-<p>Hestenes does explain that you can sum scalar and vectors and it make sense and you can multiply vectors in a natural and meaningful way. The Algebra that you obtain, the Geometric Algebra, is incredibly rich and suggests a lot of ideas that could have been otherwise unseen.</p>
-<p>The central idea of the geometric algebra is the product of two vectors written as <span class="math">\(\mathbf{a} \mathbf{b}\)</span>. It is not commutative and it does embody the concepts of both scalar and extern product.</p>
-<p>One of the most fascinating things to me was the fact that each space of dimension <span class="math">\(n\)</span> is associated to a multi-vector space of dimension of <span class="math">\(2^n\)</span>. In turn the multi-vector space is composed of n + 1 subspaces each of dimension</p>
-<div class="math">$$\binom{n}{k} \qquad \textrm{for} \, \, k = 0, \ldots, n $$</div>
-<p>For example the space has dimension 3 so it is broken down to 4 subspaces of dimensions 1, 3, 3, 1. The first one is the space of scalars which are just real numbers. Then we have the familiar vector space of dimension 3. What is interesting is the other two subspaces of dimensions 3 and 1. They are the bivectors and the pseudo-scalars proportional to the imaginary unit <span class="math">\(i\)</span>.</p>
-<p>Actually one of the first things you discover when you learn geometric algebra is that the imaginary unit is naturally introduced by geometric algebra for each space of dimensions greater then one. It is quite fascinating to me to discover that a purely geometric theory naturally requires the imaginary unit whereas in ordinary geometry it is an extraneous concept.</p>
-<p>The imaginary unit is actually related to the vectors by the relation</p>
-<div class="math">$$\mathbf{e}_1 \mathbf{e}_2 \mathbf{e}_3 = \mathbf{i}$$</div>
-<p>Now you can wonder what bivectors are and what is their meaning. Probably their properties are better described by the geometric algebra itself but you can get an idea of what they are quite easily. You can think to them as product of two orthogonal vectors or equivalently as purely imaginary vector.</p>
-<p>Actually the following equality holds for the tridimensional space </p>
-<div class="math">$$\mathbf{e}_1 \mathbf{e}_2 = \mathbf{i} \, \mathbf{e}_3$$</div>
-<p>where the vectors <span class="math">\(\mathbf{e}_i\)</span> are the base vectors. The expression above is actually true for any pair permutation of the three indexes.</p>
-<div style="text-align:center"><img src ="https://franko.github.io/images/basis_of_3d_multivector.png" />
-</div>
-
-<!-- ![Alt Text]({static}/images/basis_of_3d_multivector.png)
- -->
-
-<p>The image above, taken from Wikipedia, illustrates the basis vectors and their product, including the pseudo-scalar depicted as a volume.</p>
-<p>From the relation above it is quite clear that there is a one-to-one relation between vectors and bivectors. The transformation is done simply by multiplying the vector by the imaginary unit like in the right hand side of the equation above.</p>
-<p>The bivectors explain the mysterious axial vectors that you probably already know. Actually axial vector are nothing else that bivectors that you represent by an ordinary vector using the biunivocal relation between them.</p>
-<p>One of the most wonderful simplification stemming from GA is that the electromagnetic field can be thought as composed of a vector and a bivector part as described by the relation</p>
-<div class="math">$$F=\mathbf{E}+\mathbf{i}\mathbf{B}$$</div>
-<p>so that all the Maxwell equations are expressed by a single equation:</p>
-<div class="math">$$\left(\frac{1}{c}\partial_t + \nabla \right) F = \rho - \frac{1}{c} \mathbf{J}$$</div>
-<p>For example the equation above, in the electrostatic case, becomes:</p>
-<div class="math">$$\nabla F = \rho $$</div>
-<p> that correspond to the two equations </p>
-<div class="math">$$\nabla \cdot \mathbf{E} = \rho \qquad \nabla \wedge B = 0$$</div>
-<p>Another fascinating thing about Geometric Algebra is that the non-commuting rules of basis vectors in tridimensional space is the same of relations of the Pauli matrices. The difference is that, in geometric algebra the relations are a simple properties of the geometry and does not need to be introduced ad hoc like it happens in quantum mechanics.</p>
-<p>Last but not least one of the most clear advantage of GA is to describe spatial rotations directly in term of vectors. For example is <span class="math">\(\hat{\mathbf{u}}\)</span> is an unitary vector a rotation of a vector <span class="math">\(\mathbf{v}\)</span> of <span class="math">\(\theta\)</span> degrees around <span class="math">\(\hat{\mathbf{u}}\)</span> is described by </p>
+</footer><!-- /.post-info --><p>In my previous post I wrote about Geometric Algebra generalities. We saw that the tridimensional space generate a geometric algebra of dimension <span class="math">\(2^3 = 8 = 1 + 3 + 3 + 1\)</span> composed of four linear spaces: scalars, vectors, bivectors and pseudo-scalars.</p>
+<p>The elements of the subspaces can be used to describe the geometry of euclidean space. The vectors are associated to a direction in the space, bivectors are associated to rotations and the pseudo-scalar corresponds to volumes.</p>
+<p>The product of two vectors is composed of a scalar part, their scalar product, and a bivector part. The bivector part correspond to the oriented area of the parallelogram constructed with the two vectors like is shown in the figure below:</p>
+<p>An illustration of a vector, a bivector and a volume, equivalent to a pseudo scalar (image from Wikipedia)</p>
+<h2>GA computations in euclidean space</h2>
+<p>If you want to use the GA space to make computations you will need to "represent" the elements of each space. With my surprise I discovered that a generic multivector for tridimensional space can be represented by a 2x2 complex matrix.</p>
+<p>A rapid calculation shows that the dimensions of the space is fine: 2x2 complex matrix have dimension 8 just like tridimensional GA space.</p>
+<p>The interest of this representation is that the GA product corresponds to the ordinary matrix product.</p>
+<h2>What is the actual matrix representation ?</h2>
+<p>Well, the easy one is the unit scalar. We can easily guess that it does correspond to the unitary matrix</p>
+<div class="math">$$\begin{pmatrix}1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix}$$</div>
+<p>but things get slightly more interesting for vectors.</p>
+<p>If we call <span class="math">\(\hat{\mathbf{x}}\)</span>, <span class="math">\(\hat{\mathbf{y}}\)</span>, <span class="math">\(\hat{\mathbf{z}}\)</span> the basis vectors, their matrix counterparts should satisfy the following equalities</p>
+<div class="math">$$\hat{\mathbf{x}}^2 = \hat{\mathbf{y}}^2 = \hat{\mathbf{z}}^2 = 1$$</div>
+<p> It can be verified that the properties above are verified by hermitian matrices so that we can write </p>
+<div class="math">$$\hat{\mathbf{x}} = \begin{pmatrix}0 &amp; i \\ -i &amp; 0 \end{pmatrix} , \qquad \hat{\mathbf{y}} = \begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix} , \qquad \hat{\mathbf{z}} = \begin{pmatrix}1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix} $$</div>
+<p> Once we have the vectors we can derive the matrices for bivectors by taking their products to obtain </p>
+<div class="math">$$\hat{\mathbf{x}} \hat{\mathbf{y}} = \mathbf{i} \hat{\mathbf{z}} = \begin{pmatrix}i &amp; 0 \\ 0 &amp; -i \end{pmatrix} , \qquad \hat{\mathbf{y}} \hat{\mathbf{z}} = \mathbf{i} \hat{\mathbf{x}} = \begin{pmatrix} 0 &amp; -1 \\ 1 &amp; 0 \end{pmatrix} , \qquad \hat{\mathbf{z}} \hat{\mathbf{x}} = \mathbf{i} \hat{\mathbf{y}} = \begin{pmatrix}0 &amp; i \\ i &amp; 0 \end{pmatrix} $$</div>
+<p>Finally the pseudo-scalar is obtained as the product of the three basis vector</p>
+<div class="math">$$ \mathbf{i} = \hat{\mathbf{x}} \hat{\mathbf{y}} \hat{\mathbf{z}} = \begin{pmatrix}i &amp; 0 \\ 0 &amp; i \end{pmatrix} $$</div>
+<p>Since this latter matrix is equal to <span class="math">\(i I\)</span> we can simply identify the imaginary unit with the unitary pseudo-scalar <span class="math">\(\mathbf{i}\)</span>.</p>
+<h2>And so, what ?</h2>
+<p>From the practical point of view it means that you can represent a vector of components <span class="math">\((v_x, v_y, v_z)\)</span> with the matrix </p>
+<div class="math">$$\mathbf{v} = \begin{pmatrix} v_z &amp; v_y + i v_x \\ v_y - i v_x &amp; -v_z \end{pmatrix}$$</div>
+<p>The vector addition can be performed simply by taking the matrix sum.</p>
+<p>The multiplication of two vectors yield a bivector whose general matrix representation is </p>
+<div class="math">$$\mathbf{w} = \begin{pmatrix} i w_z &amp; i w_y - w_x \\ i w_y + w_x &amp; -i w_z \end{pmatrix}$$</div>
+<p>These relation let us compute the matrix representation of any vector or bivector but we need also to perform the opposite operation: given a complex matrix, extract its scalar, vector, bivector and imaginary parts.</p>
+<p>This is actually quite trivial to work out. For any complex matrix</p>
+<div class="math">$$\begin{pmatrix} s &amp; u \\ v &amp; t \end{pmatrix}$$</div>
+<p> the scalar part, real plus imaginary, is simply <span class="math">\(\frac{s + t}{2}\)</span>. The vector part is given by</p>
+<div class="math">$$\begin{pmatrix} v_x + i w_x \\ v_y + i w_y \\ v_z + i w_z \end{pmatrix} = \begin{pmatrix} \frac{u - v}{2i} \\ \frac{u + v}{2} \\ \frac{s - t}{2} \end{pmatrix}$$</div>
+<p>With the relation above you can extract the scalar and vector part for any given complex matrix.</p>
+<h2>Rotations</h2>
+<p>Rotations of a vector <span class="math">\(\mathbf{v}\)</span> can be expressed in GA using the relation</p>
 <div class="math">$$e^{\mathbf{i} \, \hat{\mathbf{u}} \, \theta / 2} \, \mathbf{v} \, e^{-\mathbf{i} \, \hat{\mathbf{u}} \, \theta / 2}$$</div>
-<p>For the interested people I strongly recommend to read the lecture of Hestenes for an excellent, complete introduction to this fascinating subject. </p>                </article>
+<p> where <span class="math">\(\hat{\mathbf{u}}\)</span> is the versor oriented along the rotation axis.</p>
+<p>So if you want to compute rotations you can do it by using the exponential of a bivector. This can be obtained very easily using the relation</p>
+<div class="math">$$e^{\mathbf{i} \, \hat{\mathbf{u}} \, \theta} = \cos(\theta) + \mathbf{i} \, \sin(\theta) \hat{\mathbf{u}}$$</div>
+<p>The relation above does not let you compute the exponential of any 2x2 complex matrix. It only work for matrices that represents bivectors. You can easily extend the formula to take into account a scalar component but things get complicated for the vector part.</p>
+<p>Actually the exponential of a vector involves the hyperbolic sinus and cosinus as given by the relation</p>
+<div class="math">$$e^{\hat{\mathbf{u}} \, \theta} = \cosh(\theta) + \sinh(\theta) \hat{\mathbf{u}}$$</div>
+<p>but the exponential of a combination of vector and bivectors is more complicated (I confess I do not know the explicit formula).</p>
+<p>Anyway this is not really a problem since for rotations you only need to take the exponential of bivectors plus real numbers.</p>
+<h2>A silly example...</h2>
+<p>Let us make an example to compute a rotation of 30 degree of a vector <span class="math">\(\mathbf{b} = 1/2 \, \hat{\mathbf{x}}+\hat{\mathbf{z}}\)</span> around the z axis. In matrix representation we have</p>
+<div class="math">$$\mathbf{b} = \begin{pmatrix} 1 &amp; i/2 \\ -i/2 &amp; -1 \end{pmatrix}$$</div>
+<p>The rotation of 30 degree is given by</p>
+<div class="math">$$U \mathbf{b} = e^{i \pi/12 \hat{\mathbf{z}}} \, \mathbf{b} \, e^{-i \pi/12 \hat{\mathbf{z}}}$$</div>
+<p> which, in matrix representation becames</p>
+<div class="math">$$U \mathbf{b} = \begin{pmatrix}\cos(\pi/12) + i \sin(\pi/12) &amp; 0 \\ 0 &amp; \cos(\pi/12) - i \sin(\pi/12) \end{pmatrix} \begin{pmatrix} 1 &amp; i/2 \\ -i/2 &amp; -1 \end{pmatrix} \\ \begin{pmatrix}\cos(\pi/12) - i \sin(\pi/12) &amp; 0 \\ 0 &amp; \cos(\pi/12) + i \sin(\pi/12) \end{pmatrix}$$</div>
+<p>and by carrying out the products we obtain</p>
+<div class="math">$$U \mathbf{b} = \begin{pmatrix}1 &amp; -1/2 \sin(\pi/6)+i/2 \cos(\pi/6) \\ -1/2 \sin(\pi/6)-i/2 \cos(\pi/6) &amp; -1 \end{pmatrix} $$</div>
+<p>which is the expected results, since rotation around the z axis transform the x component into a mix of x and y with coefficients <span class="math">\(\cos(\pi/6)\)</span> and <span class="math">\(\sin(\pi/6)\)</span>.</p>
+<h2>Le coup de scène</h2>
+<p>We said above that to generate rotations we only need bivectors and real numbers. It turns out that they constitute a subalgebra of the GA euclidean space. It is called the even subalgebra and it is isomorphic to quaternions. This shows that quaternions and bivectors are essentially equivalent representation and both are inherently related to rotations.</p>
+<p>To terminate this post, the reader who already know quantum physics have probably noted that the basis vectors in the matrix representation are actually the Pauli matrices. What is interesting is that in Geometric Algebra they appear naturally as a representation of the basis vector and they are not inherently related to quantum phenomenons.</p>
+<p>From the practical point of view we have seen that 2x2 complex matrix can be used to compute geometrical operations in an elegant and logical way. The matrix representation is also reasonable for practical computations even if it is somewhat redundant since it always represent the most general multi-vector with 8 components.</p>                </article>
             </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/geometric-algebra-the-wonderful-revelation.html" rel="bookmark"
+                           title="Permalink to Geometric Algebra, the wonderful revelation">Geometric Algebra, the wonderful revelation</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2013-05-04T00:00:00+02:00">
+                Published: sam. 04 mai 2013
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/francesco-abbate.html">Francesco Abbate</a>
+        </address>
+<p>In <a href="/category/maths.html">maths</a>.</p>
+
+</footer><!-- /.post-info -->                <p>Some time ago I discovered on Hacker News the Oersted Medal lecture of David Hestenes, <a href="http://geocalc.clas.asu.edu/html/Overview.html">Reforming the mathematical language of physics</a> . The text describe among other things the field of geometric algebra with a very didactic and easy to read style.</p>
+<p>For me it was a revelation, I was fascinated …</p>
+                <a class="readmore" href="/geometric-algebra-the-wonderful-revelation.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
         <section id="extras" class="body">
                 <div class="blogroll">
                         <h2>links</h2>
@@ -76,13 +127,6 @@
                             <li><a href="https://katex.org/">Katex math typesetting</a></li>
                         </ul>
                 </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="https://franko.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-
-                        </ul>
-                </div><!-- /.social -->
         </section><!-- /#extras -->
 
         <footer id="contentinfo" class="body">
